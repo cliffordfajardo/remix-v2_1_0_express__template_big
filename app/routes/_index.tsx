@@ -14,7 +14,7 @@ const getUser = async () => {
 
 export async function loader({ }: LoaderFunctionArgs) {
   return defer({
-    foo: getUser,
+    foo: getUser(),
   });
 };
 
